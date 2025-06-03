@@ -16,14 +16,20 @@
 
     .login-container {
       background: #fff;
-      padding: 40px;
+      padding: 30px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       width: 300px;
+      text-align: center;
+    }
+
+    .login-container img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 20px;
     }
 
     .login-container h2 {
-      text-align: center;
       margin-bottom: 20px;
     }
 
@@ -51,7 +57,6 @@
     }
 
     .login-container .register-link {
-      text-align: center;
       display: block;
       margin-top: 15px;
     }
@@ -59,10 +64,11 @@
 </head>
 <body>
   <div class="login-container">
+    <img src="AQ12.png" alt="Login Banner">
     <h2>Login</h2>
     <form action="dashboard.html" method="post">
-      <input type="text" placeholder="Username" name="username" required>
-      <input type="password" placeholder="Password" name="password" required>
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
       <input type="submit" value="Login">
     </form>
     <a href="#" class="register-link">New user? Register here</a>
